@@ -1,10 +1,12 @@
 <div class="row game-container">
   <div class="col-md-8 col-md-offset-2">
     <div class="game">
-      <div class="loader" *ngIf="isLoading">
-          <app-spinner></app-spinner>
+      <div class="loader" *ngIf="showLoader">
+        <app-spinner></app-spinner>
       </div>
-      <button (click)="loaded()">Load</button>
+      <div class="stage" *ngIf="!showLoader">
+        <h1>Loaded</h1>
+      </div>
     </div>
   </div>
 </div>

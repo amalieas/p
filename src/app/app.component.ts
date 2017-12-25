@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { GameComponent } from './game/game.component';
-import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',

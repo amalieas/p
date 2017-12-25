@@ -17,3 +17,40 @@
 .loader{
     margin: auto;
 }
+
+.stage {
+    width: 100%;
+    max-height: 85vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-image:none !important;
+    background-color: #1b1b1b;
+    -webkit-animation: fadeIt 5s ease-in; 
+    -moz-animation: fadeIt 5s ease-in; 
+    -o-animation: fadeIt 5s ease-in; 
+    animation: fadeIt 5s ease-in; 
+}
+
+
+@-webkit-keyframes fadeIt {
+    0%   { background-color: #1b1b1b; }
+    50%  { background-color: rgb(29, 6, 2); }
+    100% { background-color: #1b1b1b; }
+}
+@-moz-keyframes fadeIt {
+    0%   { background-color: #1b1b1b; }
+    50%  { background-color: rgb(29, 6, 2); }
+    100% { background-color: #1b1b1b; }
+}
+@-o-keyframes fadeIt {
+    0%   { background-color: #1b1b1b; }
+    50%  { background-color: rgb(29, 6, 2); }
+    100% { background-color: #1b1b1b; }
+}
+@keyframes fadeIt {
+    0%   { background-color: #1b1b1b; }
+    50%  { background-color: rgb(29, 6, 2); }
+    100% { background-color: #1b1b1b; }
+}
