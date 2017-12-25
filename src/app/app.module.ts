@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { GameComponent } from './game/game.component';
 import { FooterComponent } from './footer/footer.component';
 import { SpinnerComponent } from './game/spinner/spinner.component';
+import { AssetsComponent } from './game/assets/assets.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { SpinnerComponent } from './game/spinner/spinner.component';
     AppComponent,
     GameComponent,
     FooterComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    AssetsComponent
   ],
   imports: [
     BrowserModule

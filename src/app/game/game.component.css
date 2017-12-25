@@ -29,10 +29,6 @@
     animation: fadeText 5s ease-in; 
 }
 
-.delay {
-    animation-delay: 5s;
-}
-
 @-webkit-keyframes fadeText {
     0%   { color: #1b1b1b; visibility: visible; }
     50%  { color: rgb(106, 19, 3); visibility: visible;}
