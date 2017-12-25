@@ -25,14 +25,17 @@ export class GameComponent implements OnInit {
   public setTimer() {
     this.showLoader = true;
     this.spinnerTimer = Observable.timer(3000);
-    this.subscription = this.spinnerTimer.subscribe(() => {
+
+    this.spinnerTimer.subscribe(() => {
       this.showLoader = false;
       this.showPresenterText = true;
       this.presenterTimer = Observable.timer(5000);
+
       this.presenterTimer.subscribe(() => {
         this.showPresenterText = false;
         this.showGameTitleText = true;
         this.gameTitleTimer = Observable.timer(5000);
+
         this.gameTitleTimer.subscribe(() => {
           this.showGameTitleText = false;
         });
