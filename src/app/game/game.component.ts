@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game.component.css']
 })
 export class GameComponent implements OnInit {
+  isLoading: Boolean;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    this.isLoading = true;
   }
-
+  loaded() {
+    this.isLoading = false;
+  }
 }

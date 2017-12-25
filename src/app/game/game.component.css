@@ -1,3 +1,19 @@
 .game-container {
     background-color: #1b1b1b;
 }
+
+.game {
+    max-height: 85vh;
+    min-height: 700px;
+    width: 100%;
+    margin: 50px 0 50px 0;
+    -webkit-box-shadow: 0px 0px 46px 2px rgba(92,92,92,1);
+    -moz-box-shadow: 0px 0px 46px 2px rgba(92,92,92,1);
+    box-shadow: 0px 0px 46px 2px rgba(92,92,92,1);
+    display: flex;
+    align-items: center;
+}
+
+.loader{
+    margin: auto;
+}

@@ -1,0 +1,12 @@
+.footer-container {
+    height: 100px;
+}
+.footer-container h6, h5, h4{
+    -webkit-transition: color 2s ease-out;
+    -moz-transition: color 2s ease-out;
+    -o-transition: color 2s ease-out;
+    transition: color 2s ease-out;
+}
+.footer-container h6:hover, h5:hover, h4:hover {
+    color: rgb(223, 16, 16);
+}

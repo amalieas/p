@@ -1,15 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
 import { GameComponent } from './game/game.component';
+import { FooterComponent } from './footer/footer.component';
+import { SpinnerComponent } from './game/spinner/spinner.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    GameComponent
+    GameComponent,
+    FooterComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule
