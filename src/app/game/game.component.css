@@ -18,39 +18,38 @@
     margin: auto;
 }
 
-.stage {
-    width: 100%;
-    max-height: 85vh;
-    min-height: 700px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    background-image:none !important;
-    background-color: #1b1b1b;
-    -webkit-animation: fadeIt 5s ease-in; 
-    -moz-animation: fadeIt 5s ease-in; 
-    -o-animation: fadeIt 5s ease-in; 
-    animation: fadeIt 5s ease-in; 
+.loader h1 {
+    margin: auto;
+    text-align: center;
+    color: #1b1b1b;
+    visibility: hidden;
+    -webkit-animation: fadeText 5s ease-in; 
+    -moz-animation: fadeText 5s ease-in; 
+    -o-animation: fadeText 5s ease-in; 
+    animation: fadeText 5s ease-in; 
 }
 
+.delay {
+    animation-delay: 5s;
+}
 
-@-webkit-keyframes fadeIt {
-    0%   { background-color: #1b1b1b; }
-    50%  { background-color: rgb(29, 6, 2); }
-    100% { background-color: #1b1b1b; }
+@-webkit-keyframes fadeText {
+    0%   { color: #1b1b1b; visibility: visible; }
+    50%  { color: rgb(106, 19, 3); visibility: visible;}
+    100% { color: #1b1b1b; visibility: hidden;}
 }
-@-moz-keyframes fadeIt {
-    0%   { background-color: #1b1b1b; }
-    50%  { background-color: rgb(29, 6, 2); }
-    100% { background-color: #1b1b1b; }
+@-moz-keyframes fadeText {
+    0%   { color: #1b1b1b; visibility: visible; }
+    50%  { color: rgb(106, 19, 3); visibility: visible;}
+    100% { color: #1b1b1b; visibility: hidden;}
 }
-@-o-keyframes fadeIt {
-    0%   { background-color: #1b1b1b; }
-    50%  { background-color: rgb(29, 6, 2); }
-    100% { background-color: #1b1b1b; }
+@-o-keyframes fadeText {
+    0%   { color: #1b1b1b; visibility: visible; }
+    50%  { color: rgb(106, 19, 3); visibility: visible;}
+    100% { color: #1b1b1b; visibility: hidden;}
 }
-@keyframes fadeIt {
-    0%   { background-color: #1b1b1b; }
-    50%  { background-color: rgb(29, 6, 2); }
-    100% { background-color: #1b1b1b; }
+@keyframes fadeText {
+    0%   { color: #1b1b1b; visibility: visible; }
+    50%  { color: rgb(106, 19, 3); visibility: visible;}
+    100% { color: #1b1b1b; visibility: hidden;}
 }

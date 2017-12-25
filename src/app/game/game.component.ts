@@ -11,8 +11,12 @@ import 'rxjs/add/observable/timer';
 
 export class GameComponent implements OnInit {
   private showLoader = true;
+  private showPresenterText = false;
+  private showGameTitleText = false;
   private subscription: Subscription;
-  private timer: Observable<any>;
+  private spinnerTimer: Observable<any>;
+  private presenterTimer: Observable<any>;
+  private gameTitleTimer: Observable<any>;
 
   ngOnInit() {
     this.setTimer();
@@ -20,9 +24,19 @@ export class GameComponent implements OnInit {
 
   public setTimer() {
     this.showLoader = true;
-    this.timer = Observable.timer(3000);
-    this.subscription = this.timer.subscribe(() => {
+    this.spinnerTimer = Observable.timer(3000);
+    this.subscription = this.spinnerTimer.subscribe(() => {
       this.showLoader = false;
+      this.showPresenterText = true;
+      this.presenterTimer = Observable.timer(5000);
+      this.presenterTimer.subscribe(() => {
+        this.showPresenterText = false;
+        this.showGameTitleText = true;
+        this.gameTitleTimer = Observable.timer(5000);
+        this.gameTitleTimer.subscribe(() => {
+          this.showGameTitleText = false;
+        });
+      });
     });
   }
 }
