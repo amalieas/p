@@ -1,12 +1,12 @@
 <div class="row game-container">
   <div class="col-md-8 col-md-offset-2">
     <div class="game">
-      <div class="loader">
-        <app-spinner  *ngIf="showLoader"></app-spinner>
+      <div *ngIf="!allLoaded" class="loader">
+        <app-spinner *ngIf="showLoader"></app-spinner>
         <h1 *ngIf="showPresenterText">Bobcat Studios presents</h1>
         <h1 *ngIf="showGameTitleText" class="delay">Dungeon Escape</h1>
       </div>
-      <div class="stage" >
+      <div *ngIf="allLoaded" class="stage">
         <app-assets></app-assets>
       </div>
     </div>

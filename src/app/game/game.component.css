@@ -29,6 +29,19 @@
     animation: fadeText 5s ease-in; 
 }
 
+.stage {
+    max-height: 85vh;
+    min-height: 700px;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+app-assets {
+    position: absolute;
+    bottom: 0;
+}
+
 @-webkit-keyframes fadeText {
     0%   { color: #1b1b1b; visibility: visible; }
     50%  { color: rgb(106, 19, 3); visibility: visible;}

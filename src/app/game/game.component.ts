@@ -10,9 +10,10 @@ import 'rxjs/add/observable/timer';
 })
 
 export class GameComponent implements OnInit {
-  private showLoader = true;
-  private showPresenterText = false;
-  private showGameTitleText = false;
+  private showLoader: Boolean = true;
+  private showPresenterText: Boolean = false;
+  private showGameTitleText: Boolean = false;
+  private allLoaded: Boolean = false;
   private subscription: Subscription;
   private spinnerTimer: Observable<any>;
   private presenterTimer: Observable<any>;
@@ -38,6 +39,7 @@ export class GameComponent implements OnInit {
 
         this.gameTitleTimer.subscribe(() => {
           this.showGameTitleText = false;
+          this.allLoaded = true;
         });
       });
     });
